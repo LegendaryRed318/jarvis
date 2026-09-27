@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; JARVIS Operator</title>
+<meta name="description" content="How JARVIS Operator handles Google user data.">
+<style>
+  :root {
+    --ink: #101418; --ink-soft: #4a5560; --ground: #fbfaf8;
+    --panel: #ffffff; --line: #e2ddd6; --accent: #1f6f6b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #eceef0; --ink-soft: #9aa5b0; --ground: #11151a;
+      --panel: #161b21; --line: #262d35; --accent: #64c9c2;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #eceef0; --ink-soft: #9aa5b0; --ground: #11151a;
+    --panel: #161b21; --line: #262d35; --accent: #64c9c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 4rem 1rem 5rem; }
+  h1 { font-size: clamp(1.7rem, 4.5vw, 2.2rem); margin: 0 0 .3rem; letter-spacing: -.02em; }
+  .updated { color: var(--ink-soft); margin: 0 0 2.25rem; font-size: .92rem; }
+  h2 { font-size: 1.08rem; margin: 2.25rem 0 .7rem; letter-spacing: -.01em; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0 1.25rem; font-size: .94rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .74rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-soft); }
+  .scroller { overflow-x: auto; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1.5rem 0;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+    color: var(--ink-soft); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">JARVIS Operator &middot; last updated 27 September 2026</p>
+
+  <p>
+    JARVIS Operator is personal software run by one individual on their own computer. It has a
+    single user &mdash; its owner &mdash; and is not offered to anyone else. This policy describes
+    what happens to Google user data when the owner connects their own Google Account.
+  </p>
+
+  <h2>What is accessed, and why</h2>
+  <div class="scroller">
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Why</th><th>Written to?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gmail &mdash; read, compose, send<br>
+            <code>gmail.readonly</code>, <code>gmail.compose</code>, <code>gmail.send</code></td>
+          <td>To summarise unread mail and prepare replies.</td>
+          <td><strong>Yes.</strong> Drafts are created, and mail can be sent &mdash; but only
+            after the owner explicitly confirms that specific message. Nothing is sent on the
+            application's own initiative.</td>
+        </tr>
+        <tr>
+          <td>Calendar &mdash; read and write<br><code>calendar</code></td>
+          <td>To answer questions about the owner's schedule and add reminders they ask for.</td>
+          <td><strong>Yes</strong>, when the owner asks for an event or reminder to be added.</td>
+        </tr>
+        <tr>
+          <td>Google Slides<br><code>presentations</code></td>
+          <td>To build a slide deck when the owner asks for one.</td>
+          <td><strong>Yes</strong> &mdash; creates decks in the owner's own account on request.</td>
+        </tr>
+        <tr>
+          <td>Drive &mdash; read only<br><code>drive.readonly</code></td>
+          <td>To find documents the owner asks for by name.</td>
+          <td>No.</td>
+        </tr>
+        <tr>
+          <td>Contacts &mdash; read only<br><code>contacts.readonly</code></td>
+          <td>To match a spoken name to the right person.</td>
+          <td>No.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Where the data goes</h2>
+  <p>
+    Nowhere. Data retrieved from Google is held on the owner's own computer, inside an encrypted
+    volume, and is used only to answer the owner's own questions. Specifically:
+  </p>
+  <ul>
+    <li>There is no server, no hosted database and no user accounts.</li>
+    <li>The data is <strong>not sold</strong>, not shared, and not transferred to any third party.</li>
+    <li>It is not used for advertising, profiling or analytics.</li>
+    <li>It is not used to train any machine-learning model.</li>
+  </ul>
+
+  <div class="card">
+    <p style="margin:0">
+      <strong>One exception, stated plainly.</strong> To phrase an answer in natural language, a
+      short excerpt of the relevant text may be sent to a third-party language-model provider
+      (Google Gemini). Only the fragment needed to answer the current question is sent, it is not
+      retained by this application, and the owner can turn this off and use a local model instead,
+      in which case nothing leaves the machine at all.
+    </p>
+  </div>
+
+  <h2>Limited Use</h2>
+  <p>
+    This application's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">
+    Google API Services User Data Policy</a>, including the Limited Use requirements.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Cached Google data is kept only as long as it is useful to the owner and can be deleted by
+    them at any time by removing the local files. Authorisation can be revoked at any moment from
+    <a href="https://myaccount.google.com/permissions" rel="noopener">the owner's Google Account
+    permissions page</a>, which immediately ends this application's access.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    The stored data sits in an encrypted volume on the owner's machine, unlocked with a hardware
+    security key. Credentials are kept outside the application's source code and are not published.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    This application is not offered to the public and is not directed at anyone. It is used only
+    by its owner, on the owner's own account and data.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the revised version will be posted at this address with an updated
+    date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Enquiries can be sent to the developer contact address registered on the Google Cloud project
+    for this application.
+  </p>
+
+  <footer>
+    <a href="index.html">&larr; JARVIS Operator</a>
+  </footer>
+
+</div>
+</body>
+</html>
